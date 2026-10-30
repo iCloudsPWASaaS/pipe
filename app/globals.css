@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+
+body {
+  background-color: #f6f6f6;
+  color: #1f2c1d;
+}
+
+::selection {
+  background-color: #d3d6b2;
+  color: #1f2c1d;
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-bold uppercase tracking-[0.28em];
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.field {
+  @apply w-full rounded-xl border border-forest-950/10 bg-cream px-4 py-3.5 text-sm font-medium text-forest-950 outline-none transition placeholder:text-stone/60 focus:border-emerald focus:bg-white focus:ring-4 focus:ring-emerald/10;
+}
+
+.field-label {
+  @apply mb-2 block text-[11px] font-bold uppercase tracking-[0.18em] text-stone;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #1f2c1d;
+  -webkit-box-shadow: 0 0 0 1000px #f6f6f6 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-marquee {
+    animation: none;
+  }
+}
