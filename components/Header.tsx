@@ -6,6 +6,7 @@ import { ArrowUpRight, Menu, Phone, X } from "lucide-react";
 
 const nav = [
   { label: "Services", href: "#services" },
+  { label: "Accreditations", href: "#accreditations" },
   { label: "Renewables", href: "#renewables" },
   { label: "Partnership", href: "#partnership" },
   { label: "Contact", href: "#contact" },
@@ -59,7 +60,7 @@ export default function Header() {
                 solid ? "text-stone" : "text-white/60"
               }`}
             >
-              Gas · Electrical · Plumbing
+              Commercial · Domestic · Facilities
             </span>
           </span>
         </a>
@@ -120,7 +121,7 @@ export default function Header() {
 
       <div
         className={`overflow-hidden border-t border-forest-950/5 transition-all duration-300 lg:hidden ${
-          open ? "max-h-[26rem] opacity-100" : "max-h-0 opacity-0"
+          open ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav className="shell flex flex-col gap-1 py-5" aria-label="Mobile navigation">

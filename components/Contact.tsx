@@ -88,16 +88,18 @@ export default function Contact() {
                 <span className="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-xl bg-white">
                   <Image
                     src="/images/badges.png"
-                    alt="Gas Safe Register"
+                    alt="Gas Safe Register and MCS certification"
                     fill
                     sizes="56px"
                     className="object-contain"
                   />
                 </span>
                 <div>
-                  <p className="text-sm font-bold text-white">Gas Safe Registered</p>
+                  <p className="text-sm font-bold text-white">
+                    Gas Safe &amp; MCS Certified
+                  </p>
                   <p className="mt-1 text-xs text-white/50">
-                    Company number SC735678
+                    Gas Safe 923324 · MCS IAA-10192
                   </p>
                 </div>
               </div>

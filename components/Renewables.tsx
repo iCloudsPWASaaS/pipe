@@ -15,27 +15,30 @@ export default function Renewables() {
               <div className="lg:col-span-8">
                 <span className="inline-flex items-center gap-2 rounded-full border border-moss/25 bg-moss/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.24em] text-moss">
                   <Sparkles className="h-3.5 w-3.5" />
-                  Coming soon
+                  MCS Certified · IAA-10192
                 </span>
                 <h2 className="mt-6 max-w-2xl font-display text-4xl font-extrabold leading-[1.02] tracking-[-0.04em] sm:text-5xl lg:text-[3.5rem]">
                   Heatpumps and Renewables
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/65">
-                  We will soon be launching our MCS-accredited services
-                  alongside other renewable technologies very soon.
+                  We deliver MCS-certified heat pump and renewable installations,
+                  designed and fitted by accredited engineers across Scotland.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-2">
-                  {["MCS-accredited", "Heatpumps", "Renewable technologies"].map(
-                    (item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold text-white/70"
-                      >
-                        {item}
-                      </span>
-                    ),
-                  )}
+                  {[
+                    "MCS-certified",
+                    "Heatpumps",
+                    "Renewable technologies",
+                    "Heat Geek trained",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold text-white/70"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
 

@@ -16,9 +16,9 @@ const interTight = Inter_Tight({
   weight: ["400", "500", "600"],
 });
 
-const title = "PipeMedicUK | Domestic & Commercial Gas, Electrical & Plumbing";
+const title = "PipeMedicUK | Commercial, Domestic & Facilities Management";
 const description =
-  "We offer Commercial and Domestic Heating, Plumbing and electrical services all over Scotland. Based in Glasgow.";
+  "Commercial, domestic and facilities management services across Scotland — electrical, heating, mechanical, plumbing and renewables. Based in Glasgow.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pipemedicuk.com"),
@@ -69,11 +69,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "HVACBusiness",
   name: "PipeMedic UK",
+  legalName: "Pipe Medic UK Limited",
   description,
   url: "https://pipemedicuk.com",
   telephone: "+447830676674",
   email: "info@pipemedicuk.com",
   image: "https://pipemedicuk.com/images/og.jpg",
+  identifier: "SC735678",
   address: {
     "@type": "PostalAddress",
     streetAddress: "9 Royal Crescent",
@@ -83,6 +85,16 @@ const jsonLd = {
     addressCountry: "GB",
   },
   areaServed: "Scotland",
+  hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      name: "Gas Safe Registration 923324",
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      name: "MCS Certification IAA-10192",
+    },
+  ],
 };
 
 export default function RootLayout({

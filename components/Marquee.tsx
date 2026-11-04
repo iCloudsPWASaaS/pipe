@@ -1,4 +1,13 @@
-const items = ["Renewables", "Plumbing", "Heating", "Renewables", "Plumbing", "Heating"];
+const items = [
+  "Commercial",
+  "Domestic",
+  "Facilities Management",
+  "Electrical",
+  "Heating",
+  "Mechanical",
+  "Plumbing",
+  "Renewables",
+];
 
 function Row() {
   return (

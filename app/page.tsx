@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
+import Accreditations from "@/components/Accreditations";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Renewables from "@/components/Renewables";
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <Marquee />
+        <Accreditations />
         <Services />
         <Contact />
         <Renewables />

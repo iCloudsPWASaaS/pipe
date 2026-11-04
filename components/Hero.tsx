@@ -39,7 +39,8 @@ export default function Hero() {
 
             <Reveal delay={180}>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75 sm:text-xl">
-                We specialise in Gas, Electrical and Plumbing systems.
+                We specialise in Commercial, Domestic and Facilities Management —
+                covering Electrical, Heating, Mechanical, Plumbing and Renewables.
               </p>
             </Reveal>
 
@@ -67,7 +68,7 @@ export default function Hero() {
                 <span className="relative flex h-14 w-14 shrink-0 overflow-hidden rounded-xl bg-white">
                   <Image
                     src="/images/badges.png"
-                    alt="Gas Safe Register"
+                    alt="Gas Safe Register and MCS certification"
                     fill
                     sizes="56px"
                     className="object-contain"
@@ -76,10 +77,10 @@ export default function Hero() {
                 <div>
                   <p className="flex items-center gap-1.5 text-sm font-bold text-white">
                     <ShieldCheck className="h-4 w-4 text-moss" />
-                    Gas Safe Registered
+                    Gas Safe &amp; MCS Certified
                   </p>
                   <p className="mt-1 text-xs font-medium text-white/55">
-                    Registered in Scotland · Company number SC735678
+                    Gas Safe 923324 · MCS IAA-10192
                   </p>
                 </div>
               </div>
