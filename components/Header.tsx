@@ -37,31 +37,18 @@ export default function Header() {
         <a
           href="#home"
           onClick={() => setOpen(false)}
-          className="group flex items-center gap-3"
+          className="group flex items-center"
           aria-label="PipeMedic UK home"
         >
-          <span className="relative flex h-11 w-11 shrink-0 overflow-hidden rounded-xl ring-1 ring-black/10">
+          <span className="relative flex h-12 w-auto shrink-0 overflow-hidden lg:h-14">
             <Image
               src="/images/logo.png"
               alt="PipeMedic UK logo"
-              fill
-              sizes="44px"
-              className="object-cover"
+              width={160}
+              height={56}
+              className="h-full w-auto object-contain"
               priority
             />
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-display text-lg font-extrabold tracking-tight">
-              PipeMedic
-              <span className={solid ? "text-emerald-deep" : "text-moss"}>UK</span>
-            </span>
-            <span
-              className={`mt-1.5 text-[9px] font-bold uppercase tracking-[0.24em] transition-colors ${
-                solid ? "text-stone" : "text-white/60"
-              }`}
-            >
-              Commercial · Domestic · Facilities
-            </span>
           </span>
         </a>
 
